@@ -1,0 +1,4 @@
+.rvmrc
+/log/*
+/tmp/*
+/db/*.sqlite3
