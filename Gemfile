@@ -1,13 +1,18 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.10'
+gem 'rails', '3.2'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2', '< 0.3'
-gem "paperclip", "~> 2.4"
+gem 'sqlite3-ruby', :require => 'sqlite3'
+gem "paperclip", "~> 2.5.0"
 gem 'mime-types', :require => 'mime/types'
+
+gem 'sass'
+gem 'coffee-script'
+gem 'uglifier'
+
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -21,7 +26,6 @@ gem 'mime-types', :require => 'mime/types'
 # Bundle the extra gems:
 # gem 'bj'
 # gem 'nokogiri'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
 
 # Bundle gems for the local environment. Make sure to

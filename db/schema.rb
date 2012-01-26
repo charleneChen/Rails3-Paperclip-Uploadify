@@ -15,8 +15,8 @@ ActiveRecord::Schema.define(:version => 20100917034202) do
 
   create_table "uploads", :force => true do |t|
     t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
@@ -25,8 +25,8 @@ ActiveRecord::Schema.define(:version => 20100917034202) do
 
   create_table "users", :force => true do |t|
     t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
